@@ -15,4 +15,3 @@ namespace ProyectoCiclo3.App.Frontend.Pages
         }
     }
 }
-" hey papa"
