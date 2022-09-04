@@ -1,0 +1,36 @@
+@page
+@model ProyectoCiclo3.App.Frontend.Pages.ListAvionesModel
+@{
+}
+ 
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Marca</th>
+      <th scope="col">Modelo</th>
+      <th scope="col">Numero_asientos</th>
+      <th scope="col">Numero_toilets</th>
+      <th scope="col">Capacidad_max_peso</th>
+      <th scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+   @foreach (var avion in Model.Aviones)
+    {
+        <tr>
+            <td>@avion.id</td>
+            <td>@avion.marca</td>
+            <td>@avion.modelo</td>
+            <td>@avion.numero_asientos</td>
+            <td>@avion.numero_toilets</td>
+            <td>@avion.capacidad_max_peso</td>
+            <td>
+              <a class="btn btn-info" asp-page="./Details" asp-route-avionId="@avion.id"><i class="fas fa-adjust"></i>Ver</a>
+              <a class="btn btn-info" asp-page="./Edit" asp-route-avionId="@avion.id">Editar</a>
+              <a class="btn btn-danger" href="">Eliminar</a>
+            </td>
+        </tr>
+    }
+  </tbody>
+</table>

@@ -82,3 +82,7 @@ C:\Users\USUARIO\Downloads\misionTicC361-master\ProyectoCiclo3.App.Frontend\bin\
 C:\Users\USUARIO\Downloads\misionTicC361-master\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\ProyectoCiclo3.App.Persistencia.pdb
 C:\Users\USUARIO\Downloads\misionTicC361-master\ProyectoCiclo3.App.Frontend\bin\MCD\Debug\netcoreapp3.1\ProyectoCiclo3.App.Dominio.pdb
 C:\Users\USUARIO\Downloads\misionTicC361-master\ProyectoCiclo3.App.Frontend\obj\MCD\Debug\netcoreapp3.1\Razor\Pages\Aeropuertos\Details.cshtml.g.cs
+C:\Users\USUARIO\Downloads\misionTicC361-master\ProyectoCiclo3.App.Frontend\obj\MCD\Debug\netcoreapp3.1\Razor\Pages\Aviones\Create.cshtml.g.cs
+C:\Users\USUARIO\Downloads\misionTicC361-master\ProyectoCiclo3.App.Frontend\obj\MCD\Debug\netcoreapp3.1\Razor\Pages\Aviones\List.cshtml.g.cs
+C:\Users\USUARIO\Downloads\misionTicC361-master\ProyectoCiclo3.App.Frontend\obj\MCD\Debug\netcoreapp3.1\Razor\Pages\Rutas\Create.cshtml.g.cs
+C:\Users\USUARIO\Downloads\misionTicC361-master\ProyectoCiclo3.App.Frontend\obj\MCD\Debug\netcoreapp3.1\Razor\Pages\Rutas\List.cshtml.g.cs

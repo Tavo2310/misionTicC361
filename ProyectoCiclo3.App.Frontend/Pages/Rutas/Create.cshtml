@@ -1,0 +1,17 @@
+@page
+@model ProyectoCiclo3.App.Frontend.Pages.FormRutasModel
+@{
+}
+
+div class="text-center">
+    <form method="POST">
+        <label for="Aeropuertos origen" class="form-label">Aeropuertos origen:</label>
+        <input type="text" class="form-control" id="Aeropuertos origen" name="Aeropuertos origen" required placeholder="Aeropuertos origen">
+        <label for="Aeropuertos destino" class="form-label">Aeropuertos destino:</label>
+        <input type="text" class="form-control" id="Aeropuertos destino" name="Aeropuertos destino" required placeholder="Aeropuertos destino">
+        <label for="tiempo_estimado" class="form-label">Tiempo_estimado:</label>
+        <input type="text" class="form-control" id="tiempo_estimado" name="tiempo_estimado" required placeholder="Tiempo_estimado">
+        <hr>
+        <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+</div>
