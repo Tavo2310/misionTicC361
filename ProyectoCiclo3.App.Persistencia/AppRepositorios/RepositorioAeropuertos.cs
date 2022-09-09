@@ -13,9 +13,9 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
         {
             aeropuertos= new List<Aeropuertos>()
             {
-                new Aeropuertos{id=1,nombre="El Dorado",ciudad= "Bogota",pais= "Colombia",coord_x= "4.457878",coord_y= "14.457878"},
+                new Aeropuertos{id=1, nombre="El Dorado", ciudad= "Bogota", pais= "Colombia", coord_x= "4.457878", coord_y= "14.457878"},
                 new Aeropuertos{id=2,nombre="La Nubia",ciudad= "Maniales",pais= "Colombia",coord_x= "16.487878",coord_y= "75.124554"},
-                new Aeropuertos{id=3,nombre="JFK",ciudad= "New York",pais= "USA",coord_x= "24.45478",coord_y= "-85.25656"}
+                new Aeropuertos{id=3,nombre="JFK" , ciudad= "New York", pais= "USA", coord_x= "24.45478" , coord_y= "-85.25656"}
             };
         }
  
