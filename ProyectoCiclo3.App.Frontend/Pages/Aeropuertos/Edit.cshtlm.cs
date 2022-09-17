@@ -34,7 +34,7 @@ namespace ProyectoCiclo3.App.Frontend.Pages
             }
             if(Aeropuerto.id>0)
             {
-            // Aeropuerto = repositorioAeropuertos.Update(Aeropuerto);
+            Aeropuerto = repositorioAeropuertos.Update(Aeropuerto);
             }
             return RedirectToPage("./List");
         }
