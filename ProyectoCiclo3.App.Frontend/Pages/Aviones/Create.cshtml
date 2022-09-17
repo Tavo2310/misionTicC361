@@ -2,18 +2,21 @@
 @model ProyectoCiclo3.App.Frontend.Pages.FormAvionesModel
 @{
 } 
-div class="text-center">
     <form method="POST">
         <label for="marca" class="form-label">Marca:</label>
-        <input type="text" class="form-control" id="marca" name="marca" required placeholder="Marca">
+        <input type="text" class="form-control" id="marca" name="marca" required placeholder="Marca" asp-for="Avion.marca">
+
         <label for="modelo" class="form-label">Modelo:</label>
-        <input type="text" class="form-control" id="modelo" name="modelo" required placeholder="Modelo">
+        <input type="text" class="form-control" id="modelo" name="modelo" required placeholder="Modelo"asp-for="Avion.modelo">
+
         <label for="numero_asientos" class="form-label">Numero_asientos:</label>
-        <input type="text" class="form-control" id="numero_asientos" name="numero_asientos" required placeholder="Numero_asientos">
+        <input type="text" class="form-control" id="numero_asientos" name="numero_asientos" required placeholder="Numero_asientos" asp-for="Avion.numero_asientos">
+
         <label for="numero_toilets" class="form-label">Numero_toilets:</label>
-        <input type="number" class="form-control" id="numero_toilets" name="numero_toilets" required placeholder="Numero_toilets">
+        <input type="number" class="form-control" id="numero_toilets" name="numero_toilets" required placeholder="Numero_toilets" asp-for="Avion.numero_toilets">
+
         <label for="capacidad_max_peso" class="form-label">Capacidad_max_peso:</label>
-        <input type="number" class="form-control" id="capacidad_max_peso" name="capacidad_max_peso" required placeholder="Capacidad_max_peso">
+        <input type="number" class="form-control" id="capacidad_max_peso" name="capacidad_max_peso" required placeholder="Capacidad_max_peso" asp-for="Avion.capacidad_max_peso">
         <hr>
         <button type="submit" class="btn btn-success">Enviar</button>
          <hr>

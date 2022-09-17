@@ -7,29 +7,49 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
 {
     public class RepositorioAviones
     {
-        List<Aviones> aviones;
- 
-    public RepositorioAviones()
-        {
-            aviones= new List<Aviones>()
-            {
-                new Aviones{id=1,marca="A320",modelo= "Airbus ",numero_asientos= 220,numero_toilets= 3,capacidad_max_peso= 1},
-                new Aviones{id=2,marca="A321",modelo= "Airbus ",numero_asientos= 220,numero_toilets= 3,capacidad_max_peso= 1},
-                new Aviones{id=3,marca="A330",modelo= "Airbus ",numero_asientos= 293,numero_toilets= 4,capacidad_max_peso= 10},
-                new Aviones{id=4,marca="A340",modelo= "Airbus ",numero_asientos= 419,numero_toilets= 6,capacidad_max_peso= 16},
-                new Aviones{id=5,marca="B737",modelo= "Boeing ",numero_asientos= 215,numero_toilets= 3,capacidad_max_peso= 2},      
-                new Aviones{id=6,marca="B777",modelo= "Boeing ",numero_asientos= 550,numero_toilets= 7,capacidad_max_peso= 18}  
-                                
-                 };
-        }
+        private readonly AppContext _appContext = new AppContext();
  
         public IEnumerable<Aviones> GetAll()
         {
-            return aviones;
+            return _appContext.Aviones;
         }
  
         public Aviones GetWithId(int id){
-            return aviones.SingleOrDefault(a => a.id == id);
+            return _appContext.Aviones.Find(id);
         }
+
+        public Aviones Update(Aviones newAvion){
+            var avion = _appContext.Aviones.Find(newAvion.id);
+            if(avion != null){
+                avion.marca = newAvion.marca;
+                avion.modelo = newAvion.modelo;
+                avion.numero_asientos = newAvion.numero_asientos;
+                avion.numero_toilets = newAvion.numero_toilets;
+                avion.capacidad_max_peso = newAvion.capacidad_max_peso;
+                //Guardar en base de datos
+                 _appContext.SaveChanges();
+            }
+            return avion;
+        }
+
+        public Aviones Create(Aviones newAvion)
+        {
+            var addAvion = _appContext.Aviones.Add(newAvion);
+            //Guardar en base de datos
+            _appContext.SaveChanges();
+            return addAvion.Entity;
+        }
+
+        public Aviones Delete(int id)
+        {
+            var avion = _appContext.Aviones.Find(id);
+            if (avion != null){
+                _appContext.Aviones.Remove(avion);
+                //Guardar en base de datos
+                _appContext.SaveChanges();
+            }
+            return null;
+        }
+
     }
 }
