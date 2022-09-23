@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authorization;
  
 namespace ProyectoCiclo3.App.Frontend.Pages
 {
-    [Authorize]
+   [Authorize]
     public class FormAvionesModel : PageModel
     {
        private readonly RepositorioAviones repositorioAviones;
