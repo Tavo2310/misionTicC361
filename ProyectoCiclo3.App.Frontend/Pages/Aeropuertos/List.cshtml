@@ -2,6 +2,12 @@
 @model ProyectoCiclo3.App.Frontend.Pages.ListAeropuertosModel
 @{
 }
+
+@if(Model.Error){
+  <div class="alert alert-danger">
+    <strong>Error!</strong> El registro no puede ser eliminado.
+  </div>
+  }
  
 <table class="table table-hover">
   <thead>
